@@ -5,7 +5,7 @@
 @endif
 
 {{-- Banner header Post --}}
-@if(Request::is('blog-post'))
+@if(Request::is('blog-post/*'))
     @include('layouts-frontend.inc.banner-post')
 @endif
 <!-- SECTION -->
@@ -16,12 +16,12 @@
         <div class="row">
             <div class="col-md-8">
                 {{-- Blog post share --}}
-                @if(Request::is('blog-post'))
+                @if(Request::is('blog-post/*'))
                     @include('layouts-frontend.inc.post-share')
                 @endif
 
                 {{-- Konten post --}}
-                @if(Request::is('blog-post'))
+                @if(Request::is('blog-post/*'))
                     @yield('konten')
                 @endif
 

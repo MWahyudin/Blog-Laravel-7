@@ -6,10 +6,10 @@
 				<div class="post-category">
 					<a href="category.html">Lifestyle</a>
 				</div>
-				<h1>Mel ut impetus suscipit tincidunt. Cum id ullum laboramus persequeris.</h1>
+				<h1>{{ $posts->judul}}</h1>
 				<ul class="post-meta">
-					<li><a href="author.html">John Doe</a></li>
-					<li>20 April 2018</li>
+					<li><a href="author.html">{{$posts->users->name}}</a></li>
+					<li>{{ $posts->created_at->diffforHumans() }}</li>
 					<li><i class="fa fa-comments"></i> 3</li>
 					<li><i class="fa fa-eye"></i> 807</li>
 				</ul>

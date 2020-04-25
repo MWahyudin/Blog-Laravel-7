@@ -9,7 +9,7 @@
     <!-- post -->
     <div class="col-md-6">
         <div class="post">
-            <a class="post-img" href="{{ route('blogpost') }}"><img src="{{ $post->gambar }}" alt=""></a>
+            <a class="post-img" href="{{ route('blogpost', $post->slug) }}"><img src="{{ $post->gambar }}" alt=""></a>
             <div class="post-body">
                 @foreach ($tags as $tag)
                 <?php $tag->id ?>
@@ -23,7 +23,7 @@
                 @endforeach
                 
                 @endforeach
-                <h3 class="post-title"><a href="{{ route('blogpost') }}">{{$post->judul}}</a></h3>
+                <h3 class="post-title"><a href="{{ route('blogpost', $post->slug) }}">{{$post->judul}}</a></h3>
                 <ul class="post-meta">
                     <li><a href="author.html">{{$post->users->name}}</a></li>
                     <li>{{ $post->created_at->diffforHumans() }}</li>

@@ -7,12 +7,12 @@
             <div class="col-md-8 hot-post-left">
                 <!-- post -->
                 <div class="post post-thumb">
-                    <a class="post-img" href="{{ route('blogpost') }}"><img src="{{ asset('frontend/img/hot-post-1.jpg') }}" alt=""></a>
+                    <a class="post-img" href=""><img src="{{ asset('frontend/img/hot-post-1.jpg') }}" alt=""></a>
                     <div class="post-body">
                         <div class="post-category">
                             <a href="category.html">Lifestyle</a>
                         </div>
-                        <h3 class="post-title title-lg"><a href="{{ route('blogpost') }}">Postea senserit id eos, vivendo periculis ei qui</a></h3>
+                        <h3 class="post-title title-lg"><a href="">Postea senserit id eos, vivendo periculis ei qui</a></h3>
                         <ul class="post-meta">
                             <li><a href="author.html">John Doe</a></li>
                             <li>20 April 2018</li>
@@ -24,12 +24,12 @@
             <div class="col-md-4 hot-post-right">
                 <!-- post -->
                 <div class="post post-thumb">
-                    <a class="post-img" href="{{ route('blogpost') }}"><img src="{{ asset('frontend/img/hot-post-2.jpg') }}" alt=""></a>
+                    <a class="post-img" href=""><img src="{{ asset('frontend/img/hot-post-2.jpg') }}" alt=""></a>
                     <div class="post-body">
                         <div class="post-category">
                             <a href="category.html">Lifestyle</a>
                         </div>
-                        <h3 class="post-title"><a href="{{ route('blogpost') }}">Sed ut perspiciatis, unde omnis iste natus error sit</a></h3>
+                        <h3 class="post-title"><a href="">Sed ut perspiciatis, unde omnis iste natus error sit</a></h3>
                         <ul class="post-meta">
                             <li><a href="author.html">John Doe</a></li>
                             <li>20 April 2018</li>
@@ -40,13 +40,13 @@
 
                 <!-- post -->
                 <div class="post post-thumb">
-                    <a class="post-img" href="{{ route('blogpost') }}"><img src="{{ asset('frontend/img/hot-post-3.jpg') }}" alt=""></a>
+                    <a class="post-img" href=""><img src="{{ asset('frontend/img/hot-post-3.jpg') }}" alt=""></a>
                     <div class="post-body">
                         <div class="post-category">
                             <a href="category.html">Fashion</a>
                             <a href="category.html">Lifestyle</a>
                         </div>
-                        <h3 class="post-title"><a href="{{ route('blogpost') }}">Mel ut impetus suscipit tincidunt. Cum id ullum laboramus persequeris.</a></h3>
+                        <h3 class="post-title"><a href="">Mel ut impetus suscipit tincidunt. Cum id ullum laboramus persequeris.</a></h3>
                         <ul class="post-meta">
                             <li><a href="author.html">John Doe</a></li>
                             <li>20 April 2018</li>
