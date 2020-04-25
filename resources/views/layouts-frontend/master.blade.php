@@ -19,11 +19,12 @@
                 @if(Request::is('blog-post/*'))
                     @include('layouts-frontend.inc.post-share')
                 @endif
-
+            <div class="section-row">
                 {{-- Konten post --}}
                 @if(Request::is('blog-post/*'))
                     @yield('konten')
                 @endif
+           
 
                 {{-- Recent Post --}}
                 @if(Request::is('blog'))
@@ -35,7 +36,7 @@
                     @include('layouts-frontend.inc.kategori')
                 @endif
 
-
+            </div>
             </div>
             {{-- Widget --}}
             @include('layouts-frontend.inc.widget')

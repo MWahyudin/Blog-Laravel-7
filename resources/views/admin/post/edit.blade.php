@@ -47,7 +47,7 @@
             </div>
             <div class='form-group'>
                 <label for='content'>Konten</label>
-                <textarea name='content' class='form-control mb-2'>
+                <textarea name='content' id="content" class='form-control mb-2' >
                     {{ $post->content }}
                 </textarea>
             </div>
@@ -65,5 +65,8 @@
         </div>
     </div>
 </form>
-
+<script src="{{asset('assets/ckeditor/ckeditor.js')}}"></script>
+<script>
+    CKEDITOR.replace('content');
+</script>
 @endsection

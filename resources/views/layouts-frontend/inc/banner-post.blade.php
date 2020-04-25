@@ -4,7 +4,7 @@
 		<div class="row">
 			<div class="col-md-10">
 				<div class="post-category">
-					<a href="category.html">Lifestyle</a>
+					<a href="category.html">{{ $posts->tags[0]->name}}</a>
 				</div>
 				<h1>{{ $posts->judul}}</h1>
 				<ul class="post-meta">

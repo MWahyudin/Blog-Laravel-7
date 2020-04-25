@@ -70,6 +70,7 @@
 				<div class="container">
 					<!-- nav -->
 					<ul class="nav-menu">
+						<li><a href="{{ route('blogindex')}}">Beranda</a></li>
 						<li class="has-dropdown">
 							<a href="index.html">Home</a>
 							<div class="dropdown">

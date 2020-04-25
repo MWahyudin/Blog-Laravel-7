@@ -9,7 +9,7 @@
     <!-- post -->
     <div class="col-md-6">
         <div class="post">
-            <a class="post-img" href="{{ route('blogpost', $post->slug) }}"><img src="{{ $post->gambar }}" alt=""></a>
+            <a class="post-img" href="{{ route('blogpost', $post->slug) }}"><img src="{{ $post->gambar }}" alt="" height="160px" width="130px"></a>
             <div class="post-body">
                 @foreach ($tags as $tag)
                 <?php $tag->id ?>

@@ -33,12 +33,10 @@
                     @endforeach
                 </select>
             </div>
-            <div class='form-group'>
-                <label for='content'>Konten</label>
-                <textarea name='content' class='form-control mb-2'>
-
-                </textarea>
-            </div>
+            <div class="form-group">
+                <label for="content">Konten</label>
+                <textarea class="form-control rounded-0" id="content" rows="10" name="content"></textarea>
+              </div>
             <div class='form-group'>
                 <label for='gambar'>Thumbnail</label>
                 <input type='file' name='gambar' class='form-control mb-2'>
@@ -51,5 +49,8 @@
         </div>
     </div>
 </form>
-
+<script src="{{asset('assets/ckeditor/ckeditor.js')}}"></script>
+<script>
+    CKEDITOR.replace('content');
+</script>
 @endsection
