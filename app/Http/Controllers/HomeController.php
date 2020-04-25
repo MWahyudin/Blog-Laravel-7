@@ -31,6 +31,6 @@ class HomeController extends Controller
         $kategoriCount = Kategori::count();
         $tagCount = Tag::count();
 
-        return view('home', compact('postCount', 'kategoriCount', 'tagCount'));
+        return view('.admin.home', compact('postCount', 'kategoriCount', 'tagCount'));
     }
 }

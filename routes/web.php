@@ -18,6 +18,7 @@ Auth::routes([
 ]); 
 
 Route::get('/blog', 'BlogController@index');
+Route::get('/blog-post', 'BlogController@blogpost')->name('blogpost');
 
 
 Route::group(['middleware' => 'auth'], function () {
@@ -34,12 +35,13 @@ Route::delete('post/kill/{id}', 'PostController@kill')->name('forcedelete');
 Route::get('blog/user/{id}/editpw', 'UserController@editpw')->name('editpw');
 Route::put('blog/user/{id}/editpw','UserController@gantipw')->name('gantipw');
 //Route resource
-Route::resource('blog/kategori', 'KategoriController');
-Route::resource('blog/tag', 'TagController');
+
 Route::resource('blog/post', 'PostController');
 Route::group(['middleware' => ['auth', 'admin']], function() {
     // your routes
-    Route::resource('blog/user', 'UserController');
+    Route:: resource('blog/user', 'UserController');
+    Route:: resource('blog/kategori', 'KategoriController');
+    Route:: resource('blog/tag', 'TagController');
 });
 
 

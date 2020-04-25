@@ -15,4 +15,9 @@ class BlogController extends Controller
         $latesh_posts = Post::orderBy('created_at', 'DESC')->take(4)->get();
         return view('blog.index', compact('latesh_posts','tags'));
     }
+    
+    public function blogpost()
+    {
+        return view('blog.blog-post');
+    }
 }
