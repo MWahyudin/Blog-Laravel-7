@@ -21,14 +21,12 @@
 				</div>
 				<div class="col-md-3">
 					<div class="footer-widget">
-						<h3 class="footer-title">Categories</h3>
+						<h3 class="footer-title">Kategori</h3>
 						<div class="category-widget">
 							<ul>
-								<li><a href="#">Lifestyle <span>451</span></a></li>
-								<li><a href="#">Fashion <span>230</span></a></li>
-								<li><a href="#">Technology <span>40</span></a></li>
-								<li><a href="#">Travel <span>38</span></a></li>
-								<li><a href="#">Health <span>24</span></a></li>
+								@foreach ($kategori as $itemk2)
+								<li><a href="#">{{$itemk2->name}} <span>{{$itemk2->posts->count()}}</span></a></li>
+								@endforeach
 							</ul>
 						</div>
 					</div>

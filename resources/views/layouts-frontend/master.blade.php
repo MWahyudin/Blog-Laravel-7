@@ -21,10 +21,14 @@
                 @endif
             <div class="section-row">
                 {{-- Konten post --}}
-                @if(Request::is('blog-post/*'))
+                {{-- @if(Request::is('blog-post/*'))
                     @yield('konten')
                 @endif
-           
+                @if(Request::is('blog-kategori'))
+                @yield('konten')
+            @endif
+        --}}
+        @yield('konten')
 
                 {{-- Recent Post --}}
                 @if(Request::is('blog'))
@@ -39,7 +43,9 @@
             </div>
             </div>
             {{-- Widget --}}
-            @include('layouts-frontend.inc.widget')
+          
+           @include('layouts-frontend.inc.widget')
+         
         </div>
         <!-- /row -->
     </div>
