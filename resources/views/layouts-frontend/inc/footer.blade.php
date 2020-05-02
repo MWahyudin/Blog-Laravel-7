@@ -24,7 +24,7 @@
 						<h3 class="footer-title">Kategori</h3>
 						<div class="category-widget">
 							<ul>
-								@foreach ($kategori as $itemk2)
+								@foreach ($kategori_widget as $itemk2)
 								<li><a href="#">{{$itemk2->name}} <span>{{$itemk2->posts->count()}}</span></a></li>
 								@endforeach
 							</ul>

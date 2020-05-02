@@ -7,8 +7,8 @@
         <div class="category-widget">
             <ul>
                 {{-- {{ dd($kategori->count()) }} --}}
-                @foreach($kategori as $item)
-                    <li><a href="#">{{ $item->name }}<span>{{$item->posts->count()}}</span></a></li>
+                @foreach($kategori_widget as $item)
+                    <li><a href="{{ route('kategori', $item->slug)}}">{{ $item->name }}<span>{{$item->posts->count()}}</span></a></li>
                 @endforeach
             </ul>
         </div>

@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>Callie HTML Template</title>
+	<title>@yield('title')</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CMuli:400,700" rel="stylesheet">
@@ -76,16 +76,16 @@
 							<div class="dropdown">
 								<div class="dropdown-body">
 									<ul class="dropdown-list">
-										@foreach ($kategori as $itemk)
-										<li><a href="{{route('kategori', $itemk->id)}}">{{$itemk->name}}</a></li>
+										@foreach ($kategori_widget as $itemk)
+										<li><a href="{{route('kategori', $itemk->slug)}}">{{$itemk->name}}</a></li>
 										@endforeach
 									</ul>
 								</div>
 							</div>
 						</li>
-						<li><a href="#">Contact Us</a></li>
-						<li><a href="#">Profile</a></li>
-						<li><a href="#">About</a></li>
+						<li><a href="{{ route('kontak')}}">Contact Us</a></li>
+						<li><a href="{{ route('profile')}}">Profile</a></li>
+						<li><a href="{{ route('about')}}">About</a></li>
 					</ul>
 					<!-- /nav -->
 				</div>

@@ -17,7 +17,7 @@
     <div class="post-body">
         <div class="post-category">
            <li>
-            <a href="category.html">{{$post->kategori->name}}</a>
+            <a href="category.html">{{$post->kategori}}</a>
            </li>
         </div>
         <h3 class="post-title"><a href="blog-post.html">{{$post->judul}}</a></h3>
