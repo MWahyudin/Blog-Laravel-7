@@ -52,8 +52,8 @@
 						<button class="aside-btn"><i class="fa fa-bars"></i></button>
 						<button class="search-btn"><i class="fa fa-search"></i></button>
 						<div id="nav-search">
-							<form>
-								<input class="input" name="search" placeholder="Enter your search...">
+							<form action="{{ route('cari')}}" method="GET">
+								<input class="input" name="cari" placeholder="Enter your search...">
 							</form>
 							<button class="nav-close search-close">
 								<span></span>

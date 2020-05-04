@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
@@ -24,6 +25,9 @@ Route::get('/profile', 'BlogController@profile')->name('profile');
 Route::get('/blog-kategori', 'BlogController@blogkategori')->name('blogkategori');
 Route::get('/blog-post/{slug}', 'BlogController@blogpost')->name('blogpost');
 Route::get('/blogkategori/{kategori}', 'BlogController@kategori')->name('kategori');
+
+//Cari
+Route::get('/cari', 'BlogController@cari')->name('cari');
 
 
 Route::group(['middleware' => 'auth'], function () {
