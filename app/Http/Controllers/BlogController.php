@@ -71,6 +71,8 @@ class BlogController extends Controller
         // $posts = Post::where('slug',$kate)->paginate(5);
         return view('blog.blog-kategori', compact('latesh_posts','tags','kategori_widget','olahraga','politik','teknologi','data'));
     }
+
+    
     // public function kategori($id)
     // {
     //     $tags = Tag::all();
@@ -96,6 +98,25 @@ class BlogController extends Controller
        
         $kategori_widget = Kategori::all();
         $data            = $kategori->posts()->paginate(5);
+    //    Widget
+    $tags         = Tag::all();
+    $olahraga     = Post::latest()->where('kategori_id', 7)->get();
+    $politik      = Post::where('kategori_id', 8)->get();
+    $teknologi    = Post::where('kategori_id', 9)->get();
+    $latesh_posts = Post::orderBy('created_at', 'DESC')->take(4)->get();
+    // End widget
+        
+    
+        // $posts = Post::where('slug',$kate)->paginate(5);
+        return view('blog.blog-kategori', compact('latesh_posts','tags','kategori_widget','olahraga','politik','teknologi','data'));
+    }
+
+    public function bytag(Tag $tag)
+    {
+       
+        $kategori_widget = Kategori::all();
+        $data            = $tag->posts()->paginate(5);
+       
     //    Widget
     $tags         = Tag::all();
     $olahraga     = Post::latest()->where('kategori_id', 7)->get();

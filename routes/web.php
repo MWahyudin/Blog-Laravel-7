@@ -28,6 +28,8 @@ Route::get('/blogkategori/{kategori}', 'BlogController@kategori')->name('kategor
 
 //Cari
 Route::get('/cari', 'BlogController@cari')->name('cari');
+//byTag
+Route::get('/tag/{tag}', 'BlogController@bytag')->name('bytag');
 
 
 Route::group(['middleware' => 'auth'], function () {

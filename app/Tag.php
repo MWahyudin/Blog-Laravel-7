@@ -13,4 +13,9 @@ class Tag extends Model
         //many to many
         return $this->belongsToMany(Post::class);
     }
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }
