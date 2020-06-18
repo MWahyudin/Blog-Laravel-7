@@ -25,7 +25,7 @@ class MatchOldPassword implements Rule
      * @param  mixed  $value
      * @return bool
      */
-    public function passes($attribute, $value, $id)
+    public function passes($attribute, $value)
     {
         //
        

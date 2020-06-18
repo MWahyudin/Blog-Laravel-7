@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use App\Kategori;
 use App\Post;
 use App\Tag;
+use App\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -30,7 +31,8 @@ class HomeController extends Controller
         $postCount = Post::count();
         $kategoriCount = Kategori::count();
         $tagCount = Tag::count();
+        $userCount = User::count();
 
-        return view('.admin.home', compact('postCount', 'kategoriCount', 'tagCount'));
+        return view('.admin.home', compact('postCount', 'kategoriCount', 'tagCount','userCount'));
     }
 }

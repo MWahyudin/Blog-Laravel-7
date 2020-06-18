@@ -32,27 +32,30 @@ class BlogController extends Controller
     {
         
         $kategori_widget  = Kategori::all();
+        $tags         = Tag::all();
         
        
-        return view('blog.about', compact('kategori_widget'));
+        return view('blog.about', compact('kategori_widget','tags'));
     }
     public function profile()
     {
         
         $kategori_widget = Kategori::all();
+        $tags         = Tag::all();
         
       
        
-        return view('blog.profile', compact('kategori_widget'));
+        return view('blog.profile', compact('kategori_widget','tags'));
     }
     public function kontak()
     {
         
         $kategori_widget  = Kategori::all();
+        $tags         = Tag::all();
         
      
        
-        return view('blog.kontak', compact('kategori_widget'));
+        return view('blog.kontak', compact('kategori_widget','tags'));
     }
     public function cari(request $request)
     {

@@ -130,7 +130,7 @@ class UserController extends Controller
         return view('admin.user.editpw', compact('user'));
     }
 
-    public function gantipw(request $request, $id)
+    public function gantipw(request $request,$id)
     {
         $user = User::find($id);
       if(auth()->user()->type == 0){
