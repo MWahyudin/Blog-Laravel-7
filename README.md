@@ -19,6 +19,22 @@ password = admin123
 email = mwahyu@gmail.com
 password = penulis123
 
+<hr>
+
+Login Page
+![Screenshot](screenshot/login.png)
+
+Homepage
+![Screenshot](screenshot/homepage.png)
+
+Admin Dashboard
+![Screenshot](screenshot/addminDashboard.png)
+
+Author Dashboard
+![Screenshot](screenshot/authorDashboard.png)
+
+<hr>
+
 
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
