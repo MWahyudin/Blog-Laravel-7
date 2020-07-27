@@ -1,0 +1,8 @@
+admin
+
+admin@gmail.com
+user123456
+
+penulis
+user@gmail.com
+user123456

@@ -30,7 +30,7 @@
 <div class="row">
     <div class="col-md-12">
         <div class="section-title">
-            <h2 class="title">Politik</h2>
+            <h2 class="title">Acara Kampus</h2>
         </div>
     </div>
     <!-- post -->
@@ -58,7 +58,7 @@
 <div class="row">
     <div class="col-md-12">
         <div class="section-title">
-            <h2 class="title">Teknologi</h2>
+            <h2 class="title">Seminar</h2>
         </div>
     </div>
     <!-- post -->

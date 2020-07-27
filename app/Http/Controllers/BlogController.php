@@ -17,12 +17,12 @@ class BlogController extends Controller
     {
         $tags = Tag::all();
         $kategori_widget  = Kategori::all();
-        $olahraga = Post::where('kategori_id', 7)->get();
-        $politik = Post::where('kategori_id', 8)->get();
-        $teknologi = Post::where('kategori_id', 9)->get();
-        $banner_or = $post::latest()->where('kategori_id', 7)->first();
-        $banner_pl = $post::latest()->where('kategori_id', 8)->first();
-        $banner_tk = $post::latest()->where('kategori_id', 9)->first();
+        $olahraga = Post::where('kategori_id', 1)->get();
+        $politik = Post::where('kategori_id', 2)->get();
+        $teknologi = Post::where('kategori_id', 3)->get();
+        $banner_or = $post::latest()->where('kategori_id', 1)->first();
+        $banner_pl = $post::where('kategori_id', 1)->first();
+        $banner_tk = $post::where('kategori_id', 1)->first();
    
         
         $latesh_posts = Post::orderBy('created_at', 'DESC')->take(4)->get();
@@ -76,26 +76,6 @@ class BlogController extends Controller
     }
 
     
-    // public function kategori($id)
-    // {
-    //     $tags = Tag::all();
-    //     $kategori  = Kategori::all();
-    //     $olahraga = Post::latest()->where('kategori_id', 7)->get();
-    //     $politik = Post::where('kategori_id', 8)->get();
-    //     $teknologi = Post::where('kategori_id', 9)->get();
-        
-    //     // // dd($kategori->count());
-    //     // $posts = Post::where('kategori_id', $kategori)->count();
-    //     // dd($posts);
-        
-    //     // $kategoriid  = Kategori::all();
-    //     // $katecount = Post::where('kategori_id', $kategori_id)->count();
-    //     $latesh_posts = Post::orderBy('created_at', 'DESC')->take(4)->get();
-    //     $posts = Post::where('kategori_id',$id)->paginate(5);
-
-    //     // dd($posts->kategori->name);
-    //     return view('blog.kategori', compact('posts','latesh_posts','tags','kategori','olahraga','politik','teknologi'));
-    // }
     public function kategori(Kategori $kategori)
     {
        

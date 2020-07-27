@@ -1,0 +1,7 @@
+1.Composer install
+2.cp .env.example .env
+edit .env file sesuaikan nama database di phpmyadmin
+3.php artisan key:generate
+4.buat database kemudia import file sql ke php myadmin
+5.php artisan serve
+

@@ -43,9 +43,9 @@
 					<!-- /social -->
 
 					<!-- logo -->
-					<div class="nav-logo">
-						<a href="index.html" class="logo"><img src="{{ asset('frontend/img/logo.png') }}" alt=""></a>
-					</div>
+					{{--  <div class="nav-logo">
+						<a href="index.html" class="logo"><img src="{{ asset('assets/img/pb.png') }}" alt=""></a>
+					</div>  --}}
 					<!-- /logo -->
 
 					<!-- search & aside toggle -->

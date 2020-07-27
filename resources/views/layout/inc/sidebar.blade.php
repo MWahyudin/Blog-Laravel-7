@@ -1,7 +1,7 @@
 <div class="main-sidebar sidebar-style-2">
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand mt-4">
-            <a href="{{route('home')}}"> <img src="{{ asset('assets/img/laravel.ico') }}" height="90px" width="80px" alt=""></a>
+            <a href="{{route('home')}}"> <img src="{{ asset('assets/img/pb.png') }}" height="90px" width="80px" alt=""></a>
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
             <a href="{{route('home')}}">Menu</a>
